@@ -1,34 +1,34 @@
 export const sideMenu = [
     {
-        label: "Dashboard",
+        label: "Home",
         Icon: "fa fa-pie-chart",
         to: "/",
     },
     {
-        label: "Flats",
+        label: "Settings",
         Icon: "fa fa-university",
-        to: "/flats",
+        to: "/Settings",
     },
     {
         label: "Visitors",
         Icon: "fa fa-id-card-o",
         to: "/visitors",
     },
-    {
-        label: "Notifications",
-        Icon: "fa fa-bell",
-        to: "/notifications",
-    },
-    {
-        label: "Login",
-        Icon: "fa fa-sign-in",
-        to: "/login",
-    },
-    {
-        label: "Sign Out",
-        Icon: "fa fa-power-off",
-        to: "/signout",
-    },
+    // {
+    //     label: "Notifications",
+    //     Icon: "fa fa-bell",
+    //     to: "/notifications",
+    // },
+    // {
+    //     label: "Login",
+    //     Icon: "fa fa-sign-in",
+    //     to: "/login",
+    // },
+    // {
+    //     label: "Sign Out",
+    //     Icon: "fa fa-power-off",
+    //     to: "/signout",
+    // },
 
     //   {
     //     label: "Settings",
