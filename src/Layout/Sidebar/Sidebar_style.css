@@ -220,17 +220,15 @@ nav ul li a.toggle {
 } */
 
 
-.sidebar-footer {
+/* .sidebar-footer {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
+    width: 100%;
     text-align: center;
 }
 
 .sidebar-footer img {
-    width: 100%;
+    width: 80%;
     max-width: 150px;
     height: auto;
     opacity: 0.8;
@@ -239,4 +237,4 @@ nav ul li a.toggle {
 
 .sidebar-footer img:hover {
     opacity: 1;
-}
+} */
