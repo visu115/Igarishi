@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, Outlet, NavLink } from "react-router-dom";
 import "./Sidebar_style.css";
 import { sideMenu } from "../menuconfig/menu_config";
-
+import Logo from '../../assets/igarishi_logo.png'
 const SideNavBar = () => {
     const [isActive, setIsActive] = useState(false);
 
@@ -14,6 +14,7 @@ const SideNavBar = () => {
         <>
             <div className="sidenav-container">
                 <div className="header">
+
                     <div className="toggle" onClick={handleClick}>
                         <span className="icon">
                             {isActive ? (
@@ -24,8 +25,7 @@ const SideNavBar = () => {
                         </span>
                     </div>
                     <h3 className="mb-0 project-name text-center">
-                        <span className="text-warning">F</span>lat{" "}
-                        <span className="text-warning">S</span>afety
+                        <img src={Logo} alt="igarishi logo" />
                     </h3>
                 </div>
 
@@ -37,8 +37,8 @@ const SideNavBar = () => {
                                     <i className="fa fa-bars"></i>
                                 </span>
                                 <span className="project-name title">
-                                    <span className="text-warning">F</span>lat{" "}
-                                    <span className="text-warning">S</span>afety
+                                    <img src={Logo} alt="igarishi logo" />
+
                                 </span>
                             </a>
                         </li>
@@ -61,13 +61,16 @@ const SideNavBar = () => {
                             );
                         })}
                     </ul>
+                    {/* <div className="sidebar-footer toggle" >
+                        <img src={Logo} alt="Footer Logo" />
+                    </div> */}
                 </nav>
             </div>
             {/* <section for content to display for that specific route */}
             <section
                 className={`home-section pt-2 ${isActive ? "content-active" : ""}`}
             >
-                <div className="content" style={{marginLeft:'6px'}}>
+                <div className="content" style={{ marginLeft: '6px' }}>
                     <Outlet />
                 </div>
             </section>

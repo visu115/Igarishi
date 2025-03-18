@@ -7,7 +7,7 @@ export const sideMenu = [
     {
         label: "Settings",
         Icon: "fa fa-university",
-        to: "/Settings",
+        to: "/settings",
     },
     {
         label: "Visitors",

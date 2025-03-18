@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./Layout/Mainlayout/MainLayout";
 import Home from "./Pages/Home";
+import Settings from "./Pages/Settings";
 // import LoginPage from "./pages/login/LoginPage";
 // import DashBoardPage from "./pages/dashboard/DashBoardPage";
 // import Flats from "./pages/flats/Flats";
@@ -23,9 +24,9 @@ function App() {
           > */}
           {/* <Route index element={<DashBoardPage />}></Route> */}
           {/* <Route path="flats" element={<Flats />}></Route> */}
-          {/* <Route path="/visitors" element={<Visitors />}></Route> */}
           {/* <Route path="*" element={<NoPage />} /> */}
           <Route path="/" element={<Home />} />
+          <Route path="/settings" element={<Settings />}></Route>
         </Route>
 
         {/* </Route> */}
